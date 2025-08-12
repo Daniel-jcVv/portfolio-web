@@ -1,9 +1,20 @@
-function App() { 
-  return ( 
-		<div className="bg-slate-900 text-white"> 
-			<h1 className="text=3xl font-bold">My Portfolio</h1> 
-		</div>
-  ) 
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import {Home} from "./pages/Home";
+import {NotFound} from "./pages/NotFound";
+
+
+function App() {
+	return (
+		<>
+			<BrowserRouter>
+				<Routes>
+					<Route index element={<Home />}/>
+					<Route path="*" element={<NotFound />}/>
+				</Routes>
+			</BrowserRouter> 
+		</>
+	);
 } 
 
-export default App
+export default App;
+
