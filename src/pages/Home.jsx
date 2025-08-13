@@ -9,19 +9,28 @@ export const Home = () => {
     return (
      <div className="min-h-screen text-foreground overflow-x-hidden">
         {/* Theme Toggle*/}
+        
         <ThemeToggle/>
+        
         {/* Background Effects */}
+        
         <StarBackground/>
 
         {/** Navbar */}
+        
         <Navbar/>
+        
         {/* Main Content */}
         <main>
             <HeroSection />
             <AboutSection />
+            <SkillsSection />
+            <ProjectsSection />
+            <ContactSection />
         </main>
-        {/* Footer */}
 
+        {/* Footer */}
+        <Footer />
     </div>
     );
 };
