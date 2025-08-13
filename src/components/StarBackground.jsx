@@ -13,7 +13,6 @@ export const StarBackground = () => {
 
         const handleResize = () => {
             generateStars();
-            generateMeteors();
         };
 
         window.addEventListener("resize", handleResize);
@@ -29,12 +28,12 @@ export const StarBackground = () => {
 
         for(let i = 0; i < numberOfStars; i++){
             newStars.push({
-            id:i,
-            size: Math.random() * 3 + 1,
-            x: Math.random() * 100,
-            y: Math.random() * 100,
-            opacity: Math.random() * 0.5 + 0.5,
-            animationDuration: Math.random() * 4 + 2,
+                id:i,
+                size: Math.random() * 3 + 1,
+                x: Math.random() * 100,
+                y: Math.random() * 100,
+                opacity: Math.random() * 0.5 + 0.5,
+                animationDuration: Math.random() * 4 + 2,
         });
     }
 
@@ -44,7 +43,6 @@ export const StarBackground = () => {
 
     const generateMeteors = () => {
         const numberOfMeteors = 4;
-        
         const newMeteors = [];
 
         for(let i = 0; i < numberOfMeteors; i++){
@@ -84,11 +82,11 @@ export const StarBackground = () => {
                 key={meteor.id}
                 className="meteor animate-meteor" 
                 style={{
-                    width: meteor.size  + "px",
-                    height: meteor.size + "px",
+                    width: meteor.size * 50  + "px",
+                    height: meteor.size * 2 + "px",
                     left: meteor.x + "%",
                     top: meteor.y + "%",
-                    animationDelay: meteor.delay + "s",
+                    animationDelay: meteor.delay, 
                     animationDuration: meteor.animationDuration + "s",
                 }}
             />
