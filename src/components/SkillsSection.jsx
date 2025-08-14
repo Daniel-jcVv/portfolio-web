@@ -3,36 +3,37 @@ import { cn } from "@/lib/utils";
 
 const skills = [
   // Core Programming Languages
-  { name: "Python", category: "languages", level: "expert", description: "Pandas, PySpark, Apache Airflow, OpenPyXL" },
+  { name: "Python", category: "languages", level: "expert", description: "Pandas, data processing, automation scripting" },
   { name: "SQL", category: "languages", level: "expert", description: "Oracle, Hive, Teradata, PostgreSQL" },
   { name: "Java", category: "languages", level: "intermediate", description: "Spring Boot for data microservices" },
-  { name: "Shell Scripting", category: "languages", level: "proficient", description: "Unix/Linux automation" },
+  { name: "Shell Scripting", category: "languages", level: "intermediate", description: "Unix/Linux automation and scripting" },
 
   // ETL & Big Data Technologies
-  { name: "Apache Airflow", category: "etl", level: "proficient", description: "Workflow orchestration & automation" },
-  { name: "Apache PySpark", category: "etl", level: "proficient", description: "Large-scale data processing" },
+  { name: "Apache Airflow", category: "etl", level: "proficient", description: "Workflow orchestration &  DAG development" },
+  { name: "Apache PySpark", category: "etl", level: "proficient", description: "Data processing and transformation experience" },
   { name: "Informatica PowerCenter", category: "etl", level: "intermediate", description: "Enterprise ETL development" },
-  { name: "Apache Hive", category: "etl", level: "proficient", description: "Data warehouse queries" },
+  { name: "Apache Hive", category: "etl", level: "intermediate", description: "Data warehouse queries" },
 
   // Cloud Platforms
   { name: "AWS", category: "cloud", level: "intermediate", description: "EC2, S3, RDS, Lambda, Glue" },
-  { name: "Azure", category: "cloud", level: "intermediate", description: "Data Factory, SQL Database" },
-  { name: "GCP", category: "cloud", level: "intermediate", description: "BigQuery, Dataflow" },
+  { name: "Azure", category: "cloud", level: "intermediate", description: "Data Factory, SQL Database integration"},
+  { name: "GCP", category: "cloud", level: "intermediate", description: "BigQuery, Dataflow exposure" },
 
   // Database Technologies
-  { name: "Oracle Database", category: "databases", level: "expert", description: "Complex queries & optimization" },
-  { name: "PostgreSQL", category: "databases", level: "proficient", description: "Relational database management" },
-  { name: "Teradata", category: "databases", level: "intermediate", description: "Enterprise data warehouse" },
+  { name: "MS SQL Server", category: "databases", level: "proficient", description: "CCurrent active use, performance optimization" },
+  { name: "PostgreSQL", category: "databases", level: "proficient", description: "Advanced queries and database management"},
+  { name: "Oracle Database", category: "databases", level: "intermediate", description: "Analytics queries and database management"},
+  { name: "Teradata", category: "databases", level: "intermediate", description: "Enterprise data warehouse experience" },
 
   // Development & DevOps Tools
-  { name: "Docker", category: "tools", level: "intermediate", description: "Container orchestration" },
+  { name: "Docker", category: "tools", level: "intermediate", description: "Container deployment and orchestration" },
   { name: "Git/GitHub", category: "tools", level: "proficient", description: "Version control & collaboration" },
-  { name: "JIRA/Confluence", category: "tools", level: "proficient", description: "Agile project management" },
+  { name: "JIRA/Confluence", category: "tools", level: "proficient", description: "Agile project management and documentation" },
   { name: "Jenkins", category: "tools", level: "basic", description: "CI/CD pipeline automation" },
-  { name: "WinSCP/PuTTY", category: "tools", level: "expert", description: "Secure file transfer & remote access" },
+  { name: "WinSCP/PuTTY", category: "tools", level: "expert", description: "Secure file transfer & remote server management" },
 
   // Emerging Technologies
-  { name: "RAG Systems", category: "emerging", level: "learning", description: "Intelligent data documentation" },
+  { name: "RAG Systems", category: "emerging", level: "learning", description: "Intelligent data documentation systems" },
   { name: "MCP Protocol", category: "emerging", level: "learning", description: "Model Context Protocol integration" },
   { name: "n8n", category: "emerging", level: "learning", description: "Visual workflow automation" },
   { name: "Context Enginerring", category: "emerging", level: "basic", description: "System monitoring & alerting" },
