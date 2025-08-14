@@ -60,7 +60,7 @@ export const SkillsSection = () => {
     switch(level) {
       case "expert": return "bg-green-500";
       case "proficient": return "bg-blue-500";
-      case "intermediate": return "bg-yellow-500";
+      case "intermediate": return "bg-yellow-600";
       case "basic": return "bg-orange-400";
       case "learning": return "bg-gray-400";
       default: return "bg-gray-400";

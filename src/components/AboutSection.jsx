@@ -1,6 +1,32 @@
-import { Briefcase, Code, User } from "lucide-react";
+import { Briefcase, Code, Download, User } from "lucide-react";
 
 export const AboutSection = () => {
+
+  const handleDownloadCV = (e) => {
+    e.preventDefault();
+    const FILE_ID = import.meta.env.VITE_GOOGLE_DRIVE_CV_ID;
+    
+    // Verificar que existe el ID del archivo
+    if (!FILE_ID) {
+      console.error('REACT_APP_GOOGLE_DRIVE_CV_ID no está configurado');
+      return;
+    }
+
+    // URL para descarga directa desde Google Drive
+    const googleDriveUrl = `https://drive.google.com/uc?export=download&id=${FILE_ID}`;
+    
+    
+    // Crear un enlace temporal y simular click para descarga
+    const link = document.createElement('a');
+    link.href = googleDriveUrl;
+    link.download = 'CV.pdf'; // Nombre sugerido para el archivo
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer'; // Seguridad
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <section id="about" className="py-24 px-4 relative">
       {" "}
@@ -20,11 +46,11 @@ export const AboutSection = () => {
               I focus on building efficient ETL processes and integrating emerging AI technologies to deliver intelligent,
               data-driven solutions that transform raw information into valuable insights.
             </p>
+
+            <p className="text-muted-foreground">
                I'm passionate about crafting efficient data pipelines and intelligent systems,
                constantly exploring new ETL techniques, AI innovations,
                and cloud technologies to stay ahead in the dynamic world of data engineering and AI.
-            <p className="text-muted-foreground">
-              
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -33,12 +59,14 @@ export const AboutSection = () => {
                 Get In Touch
               </a>
 
-              <a
-                href=""
-                className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
+              <button
+                onClick={handleDownloadCV}
+                className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors 
+                duration-300 cursor-pointer flex items-center gap-2 justify-center"
               >
+                <Download className="h-4 w-4" />
                 Download CV
-              </a>
+              </button>
             </div>
           </div>
 
