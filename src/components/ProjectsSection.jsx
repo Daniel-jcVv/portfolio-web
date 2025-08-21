@@ -3,32 +3,29 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "Data Warehouse",
-    description: "A beautiful landing page app using React and Tailwind.",
-    image: "/projects/project1.png",
-    tags: ["SQL Server", "Python", "Airflow", "PySpark"],
-    demoUrl: "#",
-    githubUrl: "#",
+    title: "Enterprise Data Warehouse - Medallion Architecture",
+    description: "End-to-end data warehouse implementation with Bronze, Silver, and Gold layers using SQL Server and Azure Data Studio for enterprise data processing.",
+    image: "/images/dataArchitectureDW.png",
+    tags: ["Data Engineering", "Azure Data Studio", "T-SQL", "Analytics Platform"],
+    githubUrl: "https://github.com/Daniel-jcVv/sql-data-warehouse-project/tree/develop"
   },
   {
     id: 2,
     title: "ETL Pipeline Network Security System",
     description:
       "Interactive analytics dashboard with data visualization and filtering capabilities.",
-    image: "/projects/project2.png",
+    image: "/images/GCP.png",
     tags: ["AWS EC2", "Python", "MLFlow", "GitHub Actions", "Docker", "MongoDB"],
-    demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "#"
   },
   {
     id: 3,
-    title: "ETL Pipeline with Airflow, PostgreSQL and GCP Buckets",
+    title: "Azure Data Factory - Enterprise ETL Pipeline",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
-    image: "/projects/project3.png",
-    tags: ["GCP", "Airflow", "PostgreSQL", "Python", "Flask", "Prometheus"],
-    demoUrl: "#",
-    githubUrl: "#",
+      "Production-ready data integration platform built with Azure Data Factory and Microsoft Fabric.Features automated ETL pipelines, multi-source data ingestion, and CI/CD deployment workflows for enterprise-scale analytics.",
+    image: "/images/azure_data_factory_etl.png",
+    tags: ["Azure Data Factory", "Data Lake", "Cloud Data Engineering", "ETL Pipeline"],
+    githubUrl: "#"
   },
 ];
 
