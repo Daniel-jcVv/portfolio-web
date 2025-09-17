@@ -132,10 +132,8 @@
 }
 
 @utility gradient-border {
-  @apply relative rounded-md;
-  background: linear-gradient(to right, hsl(var(--card)), hsl(var(--card)));
-  background-clip: padding-box;
-  border: 1px solid transparent;
+  @apply relative rounded-md bg-card;
+  border: 1px solid rgba(139, 92, 246, 0.3);
 }
 
 @utility cosmic-button {

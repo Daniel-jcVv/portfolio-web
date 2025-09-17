@@ -79,8 +79,8 @@ export const AboutSection = () => {
                 <div className="text-left">
                   <h4 className="font-semibold text-lg"> Data Engineer</h4>
                   <p className="text-muted-foreground">
-                    Solving data problems through scalable ETL pipelines and
-                    AI-driven solutions with cloud technologies.
+                    Building and optimizing ETL processes while implementing
+                    data quality frameworks and automated reporting solutions.
                   </p>
                 </div>
               </div>
@@ -93,7 +93,8 @@ export const AboutSection = () => {
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">Automation Engineering</h4>
                   <p className="text-muted-foreground">
-                    Crafting robust data pipelines and seamless intelligent automation systems.
+                    Developing automated workflows and data processing systems
+                    that streamline operations and reduce manual interventions.
                   </p>
                 </div>
               </div>
@@ -107,8 +108,8 @@ export const AboutSection = () => {
                 <div className="text-left">
                   <h4 className="font-semibold text-lg">Solution Architecture</h4>
                   <p className="text-muted-foreground">
-                    Managing data solutions from concept to production 
-                    with agile and collaborative development approaches.
+                    Designing end-to-end data architectures and coordinating
+                    cross-functional teams to deliver scalable analytics solutions.
                   </p>
                 </div>
               </div>

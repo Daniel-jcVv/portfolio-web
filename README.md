@@ -58,7 +58,6 @@
 ## 🏆 Certifications
 
 - **Microsoft Azure Fundamentals** (AZ-900)
-- **Azure Data Engineer Associate** (DP-203)
 - **Advanced Azure Data Factory Implementation**
 - **Microsoft Fabric Data Integration**
 

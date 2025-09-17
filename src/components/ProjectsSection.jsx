@@ -1,25 +1,33 @@
-import { ArrowRight, ExternalLink, Github } from "lucide-react";
+import { ArrowRight, Github } from "lucide-react";
 
 const projects = [
   {
     id: 1,
     title: "Enterprise Data Warehouse - Medallion Architecture",
     description: "End-to-end data warehouse implementation with Bronze, Silver, and Gold layers using SQL Server and Azure Data Studio for enterprise data processing.",
-    image: "/images/dataArchitectureDW.png",
-    tags: ["Data Engineering", "Azure Data Studio", "T-SQL", "Analytics Platform"],
-    githubUrl: "https://github.com/Daniel-jcVv/sql-data-warehouse-project/tree/develop"
+    image: "public/images/dataArchitectureDW.png",
+    tags: ["Data Engineering", "Python", "T-SQL", "Docker", "Medallion Architecture"],
+    githubUrl: "https://github.com/Daniel-jcVv/modern-datawarehouse-project/tree/main"
   },
   {
     id: 2,
+    title: "Azure Databricks and Spark SQL",
+    description: "",
+    image: "",
+    tags: ["Azure Databricks", "Delta Lake", "Data Lakehouse", "Spark SQL", "PySpark"],
+    githubUrl: ""
+  },
+  {
+    id: 3,
     title: "ETL Pipeline Network Security System",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
+      "",
     image: "/images/GCP.png",
     tags: ["AWS EC2", "Python", "MLFlow", "GitHub Actions", "Docker", "MongoDB"],
     githubUrl: "#"
   },
   {
-    id: 3,
+    id: 4,
     title: "Azure Data Factory - Enterprise ETL Pipeline",
     description:
       "Production-ready data integration platform built with Azure Data Factory and Microsoft Fabric.Features automated ETL pipelines, multi-source data ingestion, and CI/CD deployment workflows for enterprise-scale analytics.",
@@ -75,13 +83,6 @@ export const ProjectsSection = () => {
                 </p>
                 <div className="flex justify-between items-center">
                   <div className="flex space-x-3">
-                    <a
-                      href={project.demoUrl}
-                      target="_blank"
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                    >
-                      <ExternalLink size={20} />
-                    </a>
                     <a
                       href={project.githubUrl}
                       target="_blank"
