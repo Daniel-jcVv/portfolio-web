@@ -1,10 +1,10 @@
 import {
-  Linkedin,
+  LinkedIn,
   Mail,
   MapPin,
   Phone,
   Send,
-  
+
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
@@ -33,9 +33,9 @@ export const ContactSection = () => {
 
     try {
       // emailJS
-      const EMAILJS_SERVICE_ID = process.env.EMAILJS_SERVICE_ID;
-      const EMAILJS_TEMPLATE_ID = process.env.EMAILJS_TEMPLATE_ID;
-      const EMAILJS_PUBLIC_KEY = process.env.EMAILJS_PUBLIC_KEY;
+      const EMAILJS_SERVICE_ID = import.meta.env.REACT_APP_EMAILJS_SERVICE_ID;
+      const EMAILJS_TEMPLATE_ID = import.meta.env.REACT_APP_EMAILJS_TEMPLATE_ID;
+      const EMAILJS_PUBLIC_KEY = import.meta.env.REACT_APP_EMAILJS_PUBLIC_KEY;
 
       // Check setting variables
       if (!EMAILJS_SERVICE_ID || !EMAILJS_TEMPLATE_ID || !EMAILJS_PUBLIC_KEY) {
@@ -133,7 +133,7 @@ export const ContactSection = () => {
                     href="tel:+11234567890"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    +52 (123) 456-7890
+                    +52 (461) 173-3822
                   </a>
                 </div>
               </div>
@@ -154,8 +154,14 @@ export const ContactSection = () => {
             <div className="pt-8">
               <h4 className="font-medium mb-4"> Connect With Me</h4>
               <div className="flex space-x-4 justify-center">
-                <a href="#" target="_blank">
-                  <Linkedin />
+                <a
+                  href="https://www.linkedin.com/in/daniel-garc%C3%ADa-belman-99a298aa/"
+                  aria-label="LinkedIn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="p-3 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors text-primary hover:text-primary-foreground"
+                >
+                  <LinkedIn className="h-6 w-6" />
                 </a>
               </div>
             </div>
@@ -168,7 +174,7 @@ export const ContactSection = () => {
           >
             <h3 className="text-2xl font-semibold mb-6"> Send a Message</h3>
 
-            <form onSubmit={handleInputChange} className= "space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label
                   htmlFor="name"

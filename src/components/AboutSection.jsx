@@ -4,24 +4,16 @@ export const AboutSection = () => {
 
   const handleDownloadCV = (e) => {
     e.preventDefault();
-    const FILE_ID = import.meta.env.VITE_GOOGLE_DRIVE_CV_ID;
-    
-    // Verificar que existe el ID del archivo
-    if (!FILE_ID) {
-      console.error('REACT_APP_GOOGLE_DRIVE_CV_ID no está configurado');
-      return;
-    }
 
-    // URL para descarga directa desde Google Drive
-    const googleDriveUrl = `https://drive.google.com/uc?export=download&id=${FILE_ID}`;
-    
-    
+    // URL del archivo local en public
+    const cvPath = '/assets/documents/cv_DataEngineering_JuanDanielGarciaBelman.pdf';
+
     // Crear un enlace temporal y simular click para descarga
     const link = document.createElement('a');
-    link.href = googleDriveUrl;
-    link.download = 'CV.pdf'; // Nombre sugerido para el archivo
+    link.href = cvPath;
+    link.download = 'Daniel-Garcia-CV-DataEngineering.pdf';
     link.target = '_blank';
-    link.rel = 'noopener noreferrer'; // Seguridad
+    link.rel = 'noopener noreferrer';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
