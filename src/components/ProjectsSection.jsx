@@ -9,30 +9,29 @@ const projects = [
     tags: ["Data Engineering", "Python", "T-SQL", "Docker", "Medallion Architecture"],
     githubUrl: "https://github.com/Daniel-jcVv/modern-datawarehouse-project/tree/main"
   },
+
   {
     id: 2,
-    title: "Azure Databricks and Spark SQL",
-    description: "",
-    image: "",
-    tags: ["Azure Databricks", "Delta Lake", "Data Lakehouse", "Spark SQL", "PySpark"],
+    title: "Supply Chain ETL Pipeline - Azure Data Engineering",
+    description: "Enterprise supply chain data pipeline using Azure Data Factory and Databricks. Implements medallion architecture (Bronze-Silver-Gold) with dynamic full/incremental load patterns, automated watermark tracking, and supplier analytics. Processes real-time inventory, orders, and logistics data.",
+    image: "/images/supply-chain-etl.png",
+    tags: ["Azure Data Factory", "Databricks", "PySpark", "SQL Server", "Medallion Architecture", "ETL Pipeline"],
     githubUrl: ""
   },
   {
     id: 3,
-    title: "ETL Pipeline Network Security System",
-    description:
-      "",
-    image: "/images/GCP.png",
-    tags: ["AWS EC2", "Python", "MLFlow", "GitHub Actions", "Docker", "MongoDB"],
-    githubUrl: "#"
+    title: "Smart Manufacturing Efficiency Pipeline",
+    description: "AI-powered predictive maintenance system for smart manufacturing machines using sensor data analytics. Implements GitOps deployment with Jenkins CI and ArgoCD for automated rollback and zero-downtime deployments on GCP VM with Minikube.",
+    image: "/images/mart-manufacturing.png",
+    tags: ["MLflow", "Docker", "Jenkins", "Kubernetes", "GitOps", "GCP VM with Minikube"],
+    githubUrl: "https://github.com/Daniel-jcVv/smart-manufacturing-efficiency-pipeline.git"
   },
   {
     id: 4,
     title: "RAG Healthcare Pipeline",
-    description:
-      "An intelligen medical Q&A system using RAG with LangChain.",
-    image: "public/images/chatbot-medical.png",
-    tags: ["Python", "LangChain", "Docker", ,"Flask", "Jenkins", "AWS ECR","Pipeline"],
+    description:"An intelligent medical Q&A system using RAG with LangChain.",
+    image: "/images/chatbot-medical.png",
+    tags: ["Python", "LangChain", "Docker", "Flask", "Jenkins", "AWS ECR","Pipeline"],
     githubUrl: "https://github.com/Daniel-jcVv/rag-healthcare-assistant.git"
   },
 ];
@@ -83,13 +82,15 @@ export const ProjectsSection = () => {
                 </p>
                 <div className="flex justify-between items-center">
                   <div className="flex space-x-3">
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                    >
-                      <Github size={20} />
-                    </a>
+                    {project.githubUrl && (
+                      <a
+                        href={project.githubUrl}
+                        target="_blank"
+                        className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                      >
+                        <Github size={20} />
+                      </a>
+                    )}
                   </div>
                 </div>
               </div>
