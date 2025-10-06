@@ -5,7 +5,7 @@ const projects = [
     id: 1,
     title: "Enterprise Data Warehouse - Medallion Architecture",
     description: "End-to-end data warehouse implementation with Bronze, Silver, and Gold layers using SQL Server and Azure Data Studio for enterprise data processing.",
-    image: "public/images/dataArchitectureDW.png",
+    image: "/images/dataArchitectureDW.png",
     tags: ["Data Engineering", "Python", "T-SQL", "Docker", "Medallion Architecture"],
     githubUrl: "https://github.com/Daniel-jcVv/modern-datawarehouse-project/tree/main"
   },
@@ -28,12 +28,12 @@ const projects = [
   },
   {
     id: 4,
-    title: "Azure Data Factory - Enterprise ETL Pipeline",
+    title: "RAG Healthcare Pipeline",
     description:
-      "Production-ready data integration platform built with Azure Data Factory and Microsoft Fabric.Features automated ETL pipelines, multi-source data ingestion, and CI/CD deployment workflows for enterprise-scale analytics.",
-    image: "/images/azure_data_factory_etl.png",
-    tags: ["Azure Data Factory", "Data Lake", "Cloud Data Engineering", "ETL Pipeline"],
-    githubUrl: "#"
+      "An intelligen medical Q&A system using RAG with LangChain.",
+    image: "public/images/chatbot-medical.png",
+    tags: ["Python", "LangChain", "Docker", ,"Flask", "Jenkins", "AWS ECR","Pipeline"],
+    githubUrl: "https://github.com/Daniel-jcVv/rag-healthcare-assistant.git"
   },
 ];
 

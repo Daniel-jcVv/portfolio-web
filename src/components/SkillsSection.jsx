@@ -20,7 +20,7 @@ const skills = [
   { name: "GCP", category: "cloud", level: "intermediate", description: "BigQuery, Dataflow exposure" },
 
   // Database Technologies
-  { name: "MS SQL Server", category: "databases", level: "proficient", description: "CCurrent active use, performance optimization" },
+  { name: "MS SQL Server", category: "databases", level: "proficient", description: "Current active use, performance optimization" },
   { name: "PostgreSQL", category: "databases", level: "proficient", description: "Advanced queries and database management"},
   { name: "Oracle Database", category: "databases", level: "intermediate", description: "Analytics queries and database management"},
   { name: "Teradata", category: "databases", level: "intermediate", description: "Enterprise data warehouse experience" },
@@ -36,7 +36,7 @@ const skills = [
   { name: "RAG Systems", category: "emerging", level: "learning", description: "Intelligent data documentation systems" },
   { name: "MCP Protocol", category: "emerging", level: "learning", description: "Model Context Protocol integration" },
   { name: "n8n", category: "emerging", level: "learning", description: "Visual workflow automation" },
-  { name: "Context Enginerring", category: "emerging", level: "basic", description: "System monitoring & alerting" },
+  { name: "Context Engineering", category: "emerging", level: "basic", description: "System monitoring & alerting" },
 ];
 
 const categories = [
