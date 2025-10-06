@@ -38,5 +38,5 @@ logs
 .env.production.local
 
 # Editor directories and files
-files/*
+files/
 
