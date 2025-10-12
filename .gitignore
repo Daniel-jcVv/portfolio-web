@@ -23,8 +23,9 @@ dist-ssr
 *.sln
 *.sw?
 
-# context files
-files/*
+# Code configuration
+.claude/
+
 
 # Logs
 logs
