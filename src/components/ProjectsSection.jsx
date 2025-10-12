@@ -12,11 +12,11 @@ const projects = [
 
   {
     id: 2,
-    title: "Supply Chain ETL Pipeline - Azure Data Engineering",
-    description: "Enterprise supply chain data pipeline using Azure Data Factory and Databricks. Implements medallion architecture (Bronze-Silver-Gold) with dynamic full/incremental load patterns, automated watermark tracking, and supplier analytics. Processes real-time inventory, orders, and logistics data.",
-    image: "/images/supply-chain-etl.png",
-    tags: ["Azure Data Factory", "Databricks", "PySpark", "SQL Server", "Medallion Architecture", "ETL Pipeline"],
-    githubUrl: ""
+    title: "Microsoft Fabric ETL Pipeline - Insurance Analytics",
+    description: "End-to-end insurance analytics platform using Medallion Architecture (Bronze/Silver/Gold) with Microsoft Fabric, PySpark, and Power BI.",
+    image: "/images/fabric-insurance.png",
+    tags: ["Microsoft Fabric", "Lakehouse", "PySpark", "AWS S3", "Medallion Architecture", "ETL Pipeline", "Power BI"],
+    githubUrl: "https://github.com/Daniel-jcVv/insurance-analytics-medallion.git"
   },
   {
     id: 3,
