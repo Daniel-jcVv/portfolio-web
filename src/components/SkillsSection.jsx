@@ -2,41 +2,42 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 
 const skills = [
-  // Core Programming Languages
-  { name: "Python", category: "languages", level: "expert", description: "Pandas, data processing, automation scripting" },
-  { name: "SQL", category: "languages", level: "expert", description: "Oracle, Hive, Teradata, PostgreSQL" },
-  { name: "Java", category: "languages", level: "intermediate", description: "Spring Boot for data microservices" },
-  { name: "Shell Scripting", category: "languages", level: "intermediate", description: "Unix/Linux automation and scripting" },
+  // Programming Languages
+  { name: "Python", category: "languages", level: "proficient", description: "PySpark, Pandas, ETL automation" },
+  { name: "SQL", category: "languages", level: "proficient", description: "T-SQL, PostgreSQL, query optimization" },
+  { name: "Bash", category: "languages", level: "experienced", description: "Scripting, workflow automation" },
+  { name: "Java", category: "languages", level: "developing", description: "Object-oriented programming, Spring Framework basics" },
 
-  // ETL & Big Data Technologies
-  { name: "Apache Airflow", category: "etl", level: "proficient", description: "Workflow orchestration &  DAG development" },
-  { name: "Apache PySpark", category: "etl", level: "proficient", description: "Data processing and transformation experience" },
-  { name: "Informatica PowerCenter", category: "etl", level: "intermediate", description: "Enterprise ETL development" },
-  { name: "Apache Hive", category: "etl", level: "intermediate", description: "Data warehouse queries" },
+
+  // Data Platforms & ETL
+  { name: "PySpark", category: "etl", level: "proficient", description: "Distributed processing, transformations" },
+  { name: "Airflow", category: "etl", level: "proficient", description: "Workflow orchestration, DAGs" },
+  { name: "Microsoft Fabric", category: "etl", level: "developing", description: "Lakehouse, Delta Lake, data pipelines" },
+  { name: "Databricks", category: "etl", level: "developing", description: "Unified analytics, Delta Lake, notebooks" },
 
   // Cloud Platforms
-  { name: "AWS", category: "cloud", level: "intermediate", description: "EC2, S3, RDS, Lambda, Glue" },
-  { name: "Azure", category: "cloud", level: "intermediate", description: "Data Factory, SQL Database integration"},
-  { name: "GCP", category: "cloud", level: "intermediate", description: "BigQuery, Dataflow exposure" },
+  { name: "Azure", category: "cloud", level: "proficient", description: "Ingestion and transformation with Data Factory (ADF), storing data in ADLS, serving data with SQL Database and Synapse Analytcis to business intelligence"},
+  { name: "AWS", category: "cloud", level: "experienced", description: "Deploy with Glue (ETL), S3 (Data Lake), RDS (Databases), ECR (Containers), Lambda (Serverless)" },
+  { name: "GCP", category: "cloud", level: "experienced", description: "Data warehouses and execute of high-performance analytical queries with BigQuery" },
 
   // Database Technologies
-  { name: "MS SQL Server", category: "databases", level: "proficient", description: "Current active use, performance optimization" },
-  { name: "PostgreSQL", category: "databases", level: "proficient", description: "Advanced queries and database management"},
-  { name: "Oracle Database", category: "databases", level: "intermediate", description: "Analytics queries and database management"},
-  { name: "Teradata", category: "databases", level: "intermediate", description: "Enterprise data warehouse experience" },
+  { name: "MS SQL Server", category: "databases", level: "proficient", description: "Stored procedures, CTEs, Window functions, Partition functions, Index optimization" },
+  { name: "PostgreSQL", category: "databases", level: "proficient", description: "Schema design, advanced SQL, Aggregation functions, Window functions, JSON operations"},
 
-  // Development & DevOps Tools
-  { name: "Docker", category: "tools", level: "intermediate", description: "Container deployment and orchestration" },
-  { name: "Git/GitHub", category: "tools", level: "proficient", description: "Version control & collaboration" },
-  { name: "JIRA/Confluence", category: "tools", level: "proficient", description: "Agile project management and documentation" },
-  { name: "Jenkins", category: "tools", level: "basic", description: "CI/CD pipeline automation" },
-  { name: "WinSCP/PuTTY", category: "tools", level: "expert", description: "Secure file transfer & remote server management" },
+  // Data Engineering Practices
+  { name: "Data Modeling", category: "practices", level: "proficient", description: "Star schema, dimensional modeling, fact/dimension design" },
+  { name: "Pipeline Testing", category: "practices", level: "experienced", description: "Data validation, transformation testing" },
+  { name: "ETL Monitoring", category: "practices", level: "experienced", description: "Pipeline monitoring, logging, error handling" },
 
-  // Emerging Technologies
-  { name: "RAG Systems", category: "emerging", level: "learning", description: "Intelligent data documentation systems" },
-  { name: "MCP Protocol", category: "emerging", level: "learning", description: "Model Context Protocol integration" },
-  { name: "n8n", category: "emerging", level: "learning", description: "Visual workflow automation" },
-  { name: "Context Engineering", category: "emerging", level: "basic", description: "System monitoring & alerting" },
+  // DevOps Tools
+  { name: "Docker", category: "tools", level: "experienced", description: "Container orchestration for data pipelines" },
+  { name: "Git/GitHub", category: "tools", level: "proficient", description: "Version control, branching strategies, collaborative development" },
+  { name: "JIRA/Confluence", category: "tools", level: "proficient", description: "Agile workflows, technical documentation" },
+  { name: "WinSCP/PuTTY", category: "tools", level: "proficient", description: "Secure file transfer, remote server management" },
+
+  // Emerging Data Technologies
+  { name: "LLM Integration", category: "emerging", level: "developing", description: "RAG systems for intelligent pipeline automation" },
+  { name: "Workflow Automation n8n", category: "emerging", level: "developing", description: "Modern orchestration and automation platforms" },
 ];
 
 const categories = [
@@ -45,6 +46,7 @@ const categories = [
   { key: "etl", label: "ETL & Big Data" },
   { key: "cloud", label: "Cloud" },
   { key: "databases", label: "Databases" },
+  { key: "practices", label: "Data Practices" },
   { key: "tools", label: "Tools" },
   { key: "emerging", label: "Emerging Tech" }
 ];
@@ -60,10 +62,9 @@ export const SkillsSection = () => {
     switch(level) {
       case "expert": return "bg-green-500";
       case "proficient": return "bg-blue-500";
-      case "intermediate": return "bg-yellow-600";
-      case "basic": return "bg-orange-400";
-      case "learning": return "bg-gray-400";
-      default: return "bg-gray-400";
+      case "experienced": return "bg-cyan-500";
+      case "developing": return "bg-orange-400";
+      default: return "bg-blue-400";
     }
   };
 
@@ -71,9 +72,8 @@ export const SkillsSection = () => {
     switch(level) {
       case "expert": return "Expert";
       case "proficient": return "Proficient";
-      case "intermediate": return "Intermediate";
-      case "basic": return "Basic";
-      case "learning": return "Learning";
+      case "experienced": return "Experienced";
+      case "developing": return "Developing";
       default: return level;
     }
   };
@@ -129,24 +129,16 @@ export const SkillsSection = () => {
 
         <div className="mt-8 flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
           <div className="flex items-center gap-2">
-            <div className="w-3 h-3 bg-green-500 rounded-full"></div>
-            <span>Expert</span>
-          </div>
-          <div className="flex items-center gap-2">
             <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
             <span>Proficient</span>
           </div>
           <div className="flex items-center gap-2">
-            <div className="w-3 h-3 bg-yellow-500 rounded-full"></div>
-            <span>Intermediate</span>
+            <div className="w-3 h-3 bg-cyan-500 rounded-full"></div>
+            <span>Experienced</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-3 h-3 bg-orange-400 rounded-full"></div>
-            <span>Basic</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="w-3 h-3 bg-gray-400 rounded-full"></div>
-            <span>Learning</span>
+            <span>Developing</span>
           </div>
         </div>
       </div>
