@@ -6,7 +6,9 @@ const projects = [
     title: "Enterprise Data Warehouse - Medallion Architecture",
     description: "End-to-end data warehouse implementation with Bronze, Silver, and Gold layers using SQL Server and Azure Data Studio for enterprise data processing.",
     image: "/images/dataArchitectureDW.png",
-    tags: ["Data Engineering", "Python", "T-SQL", "Docker", "Medallion Architecture"],
+    tags: ["Data Engineering", "Python", "T-SQL", "Docker", "Medallion Architecture", "Data Warehouse", 
+      "Data Modelling", "Data Lake", "Data Governance", "Data Pipelines", "Data Modeling"
+    ], 
     githubUrl: "https://github.com/Daniel-jcVv/modern-datawarehouse-project/tree/main"
   },
 
@@ -15,23 +17,34 @@ const projects = [
     title: "Microsoft Fabric ETL Pipeline - Insurance Analytics",
     description: "End-to-end insurance analytics platform using Medallion Architecture (Bronze/Silver/Gold) with Microsoft Fabric, PySpark, and Power BI.",
     image: "/images/fabric-insurance.png",
-    tags: ["Microsoft Fabric", "Lakehouse", "PySpark", "AWS S3", "Medallion Architecture", "ETL Pipeline", "Power BI"],
+    tags: ["Microsoft Fabric", "Lakehouse", "PySpark", "AWS S3", "Medallion Architecture", "ETL Pipeline", "Data Lake", "Lakehouse Architecture"],
     githubUrl: "https://github.com/Daniel-jcVv/insurance-analytics-medallion.git"
   },
+
   {
     id: 3,
+    title: "Pipeline Data Migration Tracker to Microsoft Fabric",
+    description: "Pipeline for migrating data from SFTP server to Microsoft Fabric with SQLite-based file tracking to prevent reprocessing",
+    image: "/images/diagram_pipeline_datamigration.png",
+    tags: ["Microsoft Fabric", "Pipeline", "Data Migration", "Data Engineering", "Metadata Managment", "Python", "Data Lake", "Lakehouse Architecture"],
+    githubUrl: "https://github.com/Daniel-jcVv/pipeline-data-migration-tracker.git"
+  },
+
+  {
+    id: 4,
     title: "Smart Manufacturing Efficiency Pipeline",
     description: "AI-powered predictive maintenance system for smart manufacturing machines using sensor data analytics. Implements GitOps deployment with Jenkins CI and ArgoCD for automated rollback and zero-downtime deployments on GCP VM with Minikube.",
     image: "/images/mart-manufacturing.png",
     tags: ["MLflow", "Docker", "Jenkins", "Kubernetes", "GitOps", "GCP VM with Minikube"],
     githubUrl: "https://github.com/Daniel-jcVv/smart-manufacturing-efficiency-pipeline.git"
   },
+
   {
-    id: 4,
+    id: 5,
     title: "RAG Healthcare Pipeline",
     description:"An intelligent medical Q&A system using RAG with LangChain.",
     image: "/images/chatbot-medical.png",
-    tags: ["Python", "LangChain", "Docker", "Flask", "Jenkins", "AWS ECR","Pipeline"],
+    tags: ["AI Chatbot", "Retrieval-Augmented Generation", "LangChain", "Docker", "Flask", "Jenkins", "AWS ECR", "Pipeline"],
     githubUrl: "https://github.com/Daniel-jcVv/rag-healthcare-assistant.git"
   },
 ];
