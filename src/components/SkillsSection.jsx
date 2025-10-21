@@ -36,8 +36,8 @@ const skills = [
   { name: "WinSCP/PuTTY", category: "tools", level: "proficient", description: "Secure file transfer, remote server management" },
 
   // Emerging Data Technologies
-  { name: "LLM Integration", category: "emerging", level: "developing", description: "RAG systems for intelligent pipeline automation" },
-  { name: "Workflow Automation n8n", category: "emerging", level: "developing", description: "Modern orchestration and automation platforms" },
+  { name: "LangChain/RAG", category: "emerging", level: "developing", description: "Retrieval-Augmented Generation for intelligent data pipelines" },
+  { name: "MLOps Pipelines", category: "emerging", level: "developing", description: "ML model deployment, monitoring, and integration with data workflows" },
 ];
 
 const categories = [
@@ -60,8 +60,7 @@ export const SkillsSection = () => {
 
   const getLevelColor = (level) => {
     switch(level) {
-      case "expert": return "bg-green-500";
-      case "proficient": return "bg-blue-500";
+      case "proficient": return "bg-green-500";
       case "experienced": return "bg-cyan-500";
       case "developing": return "bg-orange-400";
       default: return "bg-blue-400";
@@ -70,7 +69,6 @@ export const SkillsSection = () => {
 
   const getLevelLabel = (level) => {
     switch(level) {
-      case "expert": return "Expert";
       case "proficient": return "Proficient";
       case "experienced": return "Experienced";
       case "developing": return "Developing";
@@ -129,7 +127,7 @@ export const SkillsSection = () => {
 
         <div className="mt-8 flex flex-wrap justify-center gap-4 text-sm text-muted-foreground">
           <div className="flex items-center gap-2">
-            <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
+            <div className="w-3 h-3 bg-green-500 rounded-full"></div>
             <span>Proficient</span>
           </div>
           <div className="flex items-center gap-2">
