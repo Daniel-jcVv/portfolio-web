@@ -5,13 +5,13 @@ export const AboutSection = () => {
   const handleDownloadCV = (e) => {
     e.preventDefault();
 
-    // URL del archivo local en public
-    const cvPath = '/assets/documents/cv_DataEngineering_JuanDanielGarciaBelman.pdf';
+    // URL del archivo local en public con cache-busting
+    const cvPath = '/assets/documents/cv_DanielGarciaBelman_DE_v2510.pdf?v=' + Date.now();
 
     // Crear un enlace temporal y simular click para descarga
     const link = document.createElement('a');
     link.href = cvPath;
-    link.download = 'Daniel-Garcia-CV-DataEngineering.pdf';
+    link.download = 'cv_DanielGarciaBelman_DE_v2510.pdf';
     link.target = '_blank';
     link.rel = 'noopener noreferrer';
     document.body.appendChild(link);
