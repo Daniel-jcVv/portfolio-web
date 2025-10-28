@@ -3,40 +3,36 @@ import { cn } from "@/lib/utils";
 
 const skills = [
   // Programming Languages
-  { name: "Python", category: "languages", level: "proficient", description: "PySpark, Pandas, ETL automation" },
+  { name: "Python", category: "languages", level: "proficient", description: "Pandas, ETL automation" },
   { name: "SQL", category: "languages", level: "proficient", description: "T-SQL, PostgreSQL, query optimization" },
   { name: "Bash", category: "languages", level: "experienced", description: "Scripting, workflow automation" },
-  { name: "Java", category: "languages", level: "developing", description: "Object-oriented programming, Spring Framework basics" },
-
-
+  
   // Data Platforms & ETL
   { name: "PySpark", category: "etl", level: "proficient", description: "Distributed processing, transformations" },
   { name: "Airflow", category: "etl", level: "proficient", description: "Workflow orchestration, DAGs" },
   { name: "Microsoft Fabric", category: "etl", level: "developing", description: "Lakehouse, Delta Lake, data pipelines" },
-  { name: "Databricks", category: "etl", level: "developing", description: "Unified analytics, Delta Lake, notebooks" },
+  //{ name: "Databricks", category: "etl", level: "developing", description: "Unified analytics, Delta Lake, notebooks" },
 
   // Cloud Platforms
-  { name: "Azure", category: "cloud", level: "proficient", description: "Ingestion and transformation with Data Factory (ADF), storing data in ADLS, serving data with SQL Database and Synapse Analytcis to business intelligence"},
-  { name: "AWS", category: "cloud", level: "experienced", description: "Deploy with Glue (ETL), S3 (Data Lake), RDS (Databases), ECR (Containers), Lambda (Serverless)" },
-  { name: "GCP", category: "cloud", level: "experienced", description: "Data warehouses and execute of high-performance analytical queries with BigQuery" },
+  { name: "Azure", category: "cloud", level: "proficient", description: "Data Factory (ADF), storing data in ADLS"},
+  { name: "GCP", category: "cloud", level: "experienced", description: "BigQuery, DataProc" },
 
   // Database Technologies
   { name: "MS SQL Server", category: "databases", level: "proficient", description: "Stored procedures, CTEs, Window functions, Partition functions, Index optimization" },
-  { name: "PostgreSQL", category: "databases", level: "proficient", description: "Schema design, advanced SQL, Aggregation functions, Window functions, JSON operations"},
+  { name: "PostgreSQL", category: "databases", level: "proficient", description: "Schema design, Aggregation functions, Window functions"},
 
   // Data Engineering Practices
-  { name: "Data Modeling", category: "practices", level: "proficient", description: "Star schema, dimensional modeling, fact/dimension design" },
-  { name: "Pipeline Testing", category: "practices", level: "experienced", description: "Data validation, transformation testing" },
+  { name: "Data Modeling", category: "practices", level: "proficient", description: "Star schema, fact/dimension design" },
   { name: "ETL Monitoring", category: "practices", level: "experienced", description: "Pipeline monitoring, logging, error handling" },
 
   // DevOps Tools
   { name: "Docker", category: "tools", level: "experienced", description: "Container orchestration for data pipelines" },
   { name: "Git/GitHub", category: "tools", level: "proficient", description: "Version control, branching strategies, collaborative development" },
   { name: "JIRA/Confluence", category: "tools", level: "proficient", description: "Agile workflows, technical documentation" },
-  { name: "WinSCP/PuTTY", category: "tools", level: "proficient", description: "Secure file transfer, remote server management" },
+  
 
   // Emerging Data Technologies
-  { name: "LangChain/RAG", category: "emerging", level: "developing", description: "Retrieval-Augmented Generation for intelligent data pipelines" },
+  //{ name: "LangChain/RAG", category: "emerging", level: "developing", description: "Retrieval-Augmented Generation for intelligent data pipelines" },
   { name: "MLOps Pipelines", category: "emerging", level: "developing", description: "ML model deployment, monitoring, and integration with data workflows" },
 ];
 

@@ -30,17 +30,17 @@ const projects = [
     githubUrl: "https://github.com/Daniel-jcVv/pipeline-data-migration-tracker.git"
   },
 
-  {
+  /*{
     id: 4,
     title: "Smart Manufacturing Efficiency Pipeline",
     description: "AI-powered predictive maintenance system for smart manufacturing machines using sensor data analytics. Implements GitOps deployment with Jenkins CI and ArgoCD for automated rollback and zero-downtime deployments on GCP VM with Minikube.",
     image: "/images/mart-manufacturing.png",
     tags: ["MLflow", "Docker", "Jenkins", "Kubernetes", "GitOps", "GCP VM with Minikube"],
     githubUrl: "https://github.com/Daniel-jcVv/smart-manufacturing-efficiency-pipeline.git"
-  },
+  }, */
 
   {
-    id: 5,
+    id: 4,
     title: "RAG Healthcare Pipeline",
     description:"An intelligent medical Q&A system using RAG with LangChain.",
     image: "/images/chatbot-medical.png",
