@@ -3,26 +3,26 @@ import { cn } from "@/lib/utils";
 
 const skills = [
   // Programming Languages
-  { name: "Python", category: "languages", level: "proficient", description: "Pandas, ETL automation" },
+  { name: "Python", category: "languages", level: "proficient", description: "Pandas, Automation scripts, Web scraping" },
   { name: "SQL", category: "languages", level: "proficient", description: "T-SQL, PostgreSQL, query optimization" },
   { name: "Bash", category: "languages", level: "experienced", description: "Scripting, workflow automation" },
   
   // Data Platforms & ETL
   { name: "PySpark", category: "etl", level: "proficient", description: "Distributed processing, transformations" },
   { name: "Airflow", category: "etl", level: "proficient", description: "Workflow orchestration, DAGs" },
-  { name: "Microsoft Fabric", category: "etl", level: "developing", description: "Lakehouse, Delta Lake, data pipelines" },
-  //{ name: "Databricks", category: "etl", level: "developing", description: "Unified analytics, Delta Lake, notebooks" },
+  { name: "Microsoft Fabric", category: "etl", level: "developing", description: "Lakehouse, Delta Lake, Data Pipelines" },
+  { name: "Databricks", category: "etl", level: "experienced", description: "Unified analytics, Delta Lake, Notebooks, Unity Catalog" },
 
   // Cloud Platforms
-  { name: "Azure", category: "cloud", level: "proficient", description: "Data Factory (ADF), storing data in ADLS"},
-  { name: "GCP", category: "cloud", level: "experienced", description: "BigQuery, DataProc" },
+  { name: "Azure", category: "cloud", level: "proficient", description: "Data Factory (ADF), Synapse Analytics, Data Lake Storage, Azure SQL, Databricks, Azure DevOps"},
+  { name: "AWS", category: "cloud", level: "developing", description: "S3, Glue, Redshift" },
 
   // Database Technologies
   { name: "MS SQL Server", category: "databases", level: "proficient", description: "Stored procedures, CTEs, Window functions, Partition functions, Index optimization" },
   { name: "PostgreSQL", category: "databases", level: "proficient", description: "Schema design, Aggregation functions, Window functions"},
 
   // Data Engineering Practices
-  { name: "Data Modeling", category: "practices", level: "proficient", description: "Star schema, fact/dimension design" },
+  { name: "Data Modeling", category: "practices", level: "proficient", description: "Star schema, Snowflake schema ,fact/dimension design" },
   { name: "ETL Monitoring", category: "practices", level: "experienced", description: "Pipeline monitoring, logging, error handling" },
 
   // DevOps Tools
