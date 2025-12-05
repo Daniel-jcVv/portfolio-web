@@ -6,12 +6,12 @@ export const AboutSection = () => {
     e.preventDefault();
 
     // URL del archivo local en public con cache-busting
-    const cvPath = '/assets/documents/cv_DanielGarciaBelman_DE_v2510.pdf?v=' + Date.now();
+    const cvPath = '/assets/documents/CV_JuanDanielGarciaBelman_de122504.pdf' + '?t=' + Date.now();
 
     // Crear un enlace temporal y simular click para descarga
     const link = document.createElement('a');
     link.href = cvPath;
-    link.download = 'cv_DanielGarciaBelman_DE_v2510.pdf';
+    link.download = 'cv_DanielGarciaBelman_DE.pdf';
     link.target = '_blank';
     link.rel = 'noopener noreferrer';
     document.body.appendChild(link);
