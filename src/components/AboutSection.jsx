@@ -30,19 +30,17 @@ export const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">
-              Data Engineer & AI Tech Creator
+              AI Automation & Data Engineer
             </h3>
 
             <p className="text-muted-foreground">
-              With over 3 years of experience in data engineering,
-              I focus on building efficient ETL processes and integrating emerging AI technologies to deliver intelligent,
-              data-driven solutions that transform raw information into valuable insights.
+              With over 3 years of experience in data engineering, I specialize in building autonomous data ecosystems.
+              I bridge the gap between traditional DE and AI by orchestrating intelligent workflows with n8n and Python,
+              transforming manual operations into scalable, self-evolving solutions.
             </p>
-
             <p className="text-muted-foreground">
-               I'm passionate about crafting efficient data pipelines and intelligent systems,
-               constantly exploring new ETL techniques, AI innovations,
-               and cloud technologies to stay ahead in the dynamic world of data engineering and AI.
+              I'm passionate about the "Agentic" era of data. Currently, I focus on designing AI agents that don't just process data,
+              but act upon it, reducing operational debt and unlocking new levels of efficiency through cutting-edge automation.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -83,7 +81,7 @@ export const AboutSection = () => {
                   <User className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Automation Engineering</h4>
+                  <h4 className="font-semibold text-lg">AI Automation & n8n</h4>
                   <p className="text-muted-foreground">
                     Developing automated workflows and data processing systems
                     that streamline operations and reduce manual interventions.
@@ -98,7 +96,7 @@ export const AboutSection = () => {
                 </div>
 
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Solution Architecture</h4>
+                  <h4 className="font-semibold text-lg">Agentic Workflows</h4>
                   <p className="text-muted-foreground">
                     Designing end-to-end data architectures and coordinating
                     cross-functional teams to deliver scalable analytics solutions.

@@ -2,49 +2,30 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 
 const skills = [
-  // Programming Languages
-  { name: "Python", category: "languages", level: "proficient", description: "Pandas, Automation scripts, Web scraping" },
-  { name: "SQL", category: "languages", level: "proficient", description: "T-SQL, PostgreSQL, query optimization" },
-  { name: "Bash", category: "languages", level: "experienced", description: "Scripting, workflow automation" },
-  
-  // Data Platforms & ETL
-  { name: "PySpark", category: "etl", level: "proficient", description: "Distributed processing, transformations" },
-  { name: "Airflow", category: "etl", level: "proficient", description: "Workflow orchestration, DAGs" },
-  { name: "Microsoft Fabric", category: "etl", level: "developing", description: "Lakehouse, Delta Lake, Data Pipelines" },
-  { name: "Databricks", category: "etl", level: "experienced", description: "Unified analytics, Delta Lake, Notebooks, Unity Catalog" },
+  // AI & Automation
+  { name: "n8n Mastery", category: "automation", level: "proficient", description: "Workflow orchestration, API integrations, autonomous agent loops" },
+  { name: "Python", category: "automation", level: "proficient", description: "AI Agents (CrewAI, AutoGen), Automation scripts, LangChain" },
+  { name: "AI Agents", category: "automation", level: "experienced", description: "Design and deployment of autonomous agents for business processes" },
+  { name: "LangChain", category: "automation", level: "experienced", description: "RAG pipelines, LLM orchestration, and intelligent tool-use" },
 
-  // Cloud Platforms
-  { name: "Azure", category: "cloud", level: "proficient", description: "Data Factory (ADF), Synapse Analytics, Data Lake Storage, Azure SQL, Databricks, Azure DevOps"},
-  { name: "AWS", category: "cloud", level: "developing", description: "S3, Glue, Redshift" },
+  // Data Engineering & Backend
+  { name: "SQL & Architecture", category: "etl", level: "proficient", description: "Medallion Architecture (Bronze/Silver/Gold), Advanced T-SQL, and efficient schema design" },
+  { name: "Databricks", category: "etl", level: "proficient", description: "Unified Lakehouse platform, Spark notebooks, and automated Delta Lake transformations" },
+  { name: "PySpark & Spark", category: "etl", level: "proficient", description: "Distributed processing and high-volume data transformations" },
+  { name: "Airflow", category: "etl", level: "proficient", description: "Robust workflow orchestration and automated data pipelines" },
 
-  // Database Technologies
-  { name: "MS SQL Server", category: "databases", level: "proficient", description: "Stored procedures, CTEs, Window functions, Partition functions, Index optimization" },
-  { name: "PostgreSQL", category: "databases", level: "proficient", description: "Schema design, Aggregation functions, Window functions"},
-
-  // Data Engineering Practices
-  { name: "Data Modeling", category: "practices", level: "proficient", description: "Star schema, Snowflake schema ,fact/dimension design" },
-  { name: "ETL Monitoring", category: "practices", level: "experienced", description: "Pipeline monitoring, logging, error handling" },
-
-  // DevOps Tools
-  { name: "Docker", category: "tools", level: "experienced", description: "Container orchestration for data pipelines" },
-  { name: "Git/GitHub", category: "tools", level: "proficient", description: "Version control, branching strategies, collaborative development" },
-  { name: "JIRA/Confluence", category: "tools", level: "proficient", description: "Agile workflows, technical documentation" },
-  
-
-  // Emerging Data Technologies
-  //{ name: "LangChain/RAG", category: "emerging", level: "developing", description: "Retrieval-Augmented Generation for intelligent data pipelines" },
-  { name: "MLOps Pipelines", category: "emerging", level: "developing", description: "ML model deployment, monitoring, and integration with data workflows" },
+  // Cloud & Infrastructure
+  { name: "Azure", category: "cloud", level: "proficient", description: "Scalable data architecture with Data Factory, Synapse, and High-Availability patterns" },
+  { name: "AWS", category: "cloud", level: "developing", description: "Cloud-native automation focusing on Scalable Serverless patterns (Lambda, S3, ECR)" },
+  { name: "Docker", category: "cloud", level: "experienced", description: "Containerization for portable and reliable automation" },
+  { name: "Git & DevOps", category: "cloud", level: "proficient", description: "Version control and collaborative development workflows" },
 ];
 
 const categories = [
   { key: "all", label: "All Skills" },
-  { key: "languages", label: "Programming" },
-  { key: "etl", label: "ETL & Big Data" },
-  { key: "cloud", label: "Cloud" },
-  { key: "databases", label: "Databases" },
-  { key: "practices", label: "Data Practices" },
-  { key: "tools", label: "Tools" },
-  { key: "emerging", label: "Emerging Tech" }
+  { key: "automation", label: "AI & Automation" },
+  { key: "etl", label: "Data Engineering" },
+  { key: "cloud", label: "Cloud & DevOps" },
 ];
 
 export const SkillsSection = () => {
@@ -55,7 +36,7 @@ export const SkillsSection = () => {
   );
 
   const getLevelColor = (level) => {
-    switch(level) {
+    switch (level) {
       case "proficient": return "bg-green-500";
       case "experienced": return "bg-cyan-500";
       case "developing": return "bg-orange-400";
@@ -64,7 +45,7 @@ export const SkillsSection = () => {
   };
 
   const getLevelLabel = (level) => {
-    switch(level) {
+    switch (level) {
       case "proficient": return "Proficient";
       case "experienced": return "Experienced";
       case "developing": return "Developing";
@@ -104,7 +85,7 @@ export const SkillsSection = () => {
             >
               <div className="flex items-center justify-between mb-3">
                 <h3 className="font-semibold text-lg">{skill.name}</h3>
-                <span 
+                <span
                   className={cn(
                     "px-2 py-1 rounded-full text-xs text-white font-medium",
                     getLevelColor(skill.level)
@@ -113,7 +94,7 @@ export const SkillsSection = () => {
                   {getLevelLabel(skill.level)}
                 </span>
               </div>
-              
+
               <p className="text-sm text-muted-foreground leading-relaxed">
                 {skill.description}
               </p>

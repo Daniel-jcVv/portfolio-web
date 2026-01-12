@@ -3,50 +3,39 @@ import { ArrowRight, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "Enterprise Data Warehouse - Medallion Architecture",
-    description: "End-to-end data warehouse implementation with Bronze, Silver, and Gold layers using SQL Server and Azure Data Studio for enterprise data processing.",
-    image: "/images/dataArchitectureDW.png",
-    tags: ["Data Engineering", "Python", "T-SQL", "Docker", "Medallion Architecture", "Data Warehouse", 
-      "Data Modelling", "Data Lake", "Data Governance", "Data Pipelines", "Data Modeling"
-    ], 
-    githubUrl: "https://github.com/Daniel-jcVv/modern-datawarehouse-project/tree/main"
+    title: "Autonomous DataCenter AI Monitor",
+    description: "Mission-critical monitoring system designed for high-density Data Center operations. Orchestrates n8n workflows and AI Agents to bridge the gap between hardware status and intelligent incident response, ensuring 24/7 uptime and proactive anomaly detection.",
+    image: "/images/dashboard_demo.gif",
+    tags: ["DataCenter Ops", "Uptime Optimization", "n8n Automation", "AI Agents", "Infrastructure Monitoring"],
+    githubUrl: "https://github.com/Daniel-jcVv/DataCenter-AI-Monitor.git"
   },
 
   {
     id: 2,
-    title: "Microsoft Fabric ETL Pipeline - Insurance Analytics",
-    description: "End-to-end insurance analytics platform using Medallion Architecture (Bronze/Silver/Gold) with Microsoft Fabric, PySpark, and Power BI.",
-    image: "/images/fabric-insurance.png",
-    tags: ["Microsoft Fabric", "Lakehouse", "PySpark", "AWS S3", "Medallion Architecture", "ETL Pipeline", "Data Lake", "Lakehouse Architecture"],
-    githubUrl: "https://github.com/Daniel-jcVv/insurance-analytics-medallion.git"
+    title: "AI Agent Healthcare Assistant",
+    description: "An autonomous medical Q&A system using RAG with LangChain. Designed to scale knowledge retrieval through intelligent AI agents that process and act upon complex documentation.",
+    image: "/images/chatbot-medical.png",
+    tags: ["AI Agents", "n8n Automation", "LangChain", "RAG Pipeline", "Python"],
+    githubUrl: "https://github.com/Daniel-jcVv/rag-healthcare-assistant.git"
   },
 
   {
     id: 3,
-    title: "Pipeline Data Migration Tracker to Microsoft Fabric",
-    description: "Pipeline for migrating data from SFTP server to Microsoft Fabric with SQLite-based file tracking to prevent reprocessing",
-    image: "/images/diagram_pipeline_datamigration.png",
-    tags: ["Microsoft Fabric", "Pipeline", "Data Migration", "Data Engineering", "Metadata Managment", "Python", "Data Lake", "Lakehouse Architecture"],
-    githubUrl: "https://github.com/Daniel-jcVv/pipeline-data-migration-tracker.git"
+    title: "Enterprise Data Warehouse - Medallion Architecture",
+    description: "End-to-end data warehouse implementation with Bronze, Silver, and Gold layers using SQL Server. The robust backbone for high-performance automation systems.",
+    image: "/images/dataArchitectureDW.png",
+    tags: ["Data Engineering", "Robust Pipelines", "T-SQL", "Medallion", "Data Warehouse"],
+    githubUrl: "https://github.com/Daniel-jcVv/modern-datawarehouse-project/tree/main"
   },
-
-  /*{
-    id: 4,
-    title: "Smart Manufacturing Efficiency Pipeline",
-    description: "AI-powered predictive maintenance system for smart manufacturing machines using sensor data analytics. Implements GitOps deployment with Jenkins CI and ArgoCD for automated rollback and zero-downtime deployments on GCP VM with Minikube.",
-    image: "/images/mart-manufacturing.png",
-    tags: ["MLflow", "Docker", "Jenkins", "Kubernetes", "GitOps", "GCP VM with Minikube"],
-    githubUrl: "https://github.com/Daniel-jcVv/smart-manufacturing-efficiency-pipeline.git"
-  }, */
 
   {
     id: 4,
-    title: "RAG Healthcare Pipeline",
-    description:"An intelligent medical Q&A system using RAG with LangChain.",
-    image: "/images/chatbot-medical.png",
-    tags: ["AI Chatbot", "Retrieval-Augmented Generation", "LangChain", "Docker", "Flask", "Jenkins", "AWS ECR", "Pipeline"],
-    githubUrl: "https://github.com/Daniel-jcVv/rag-healthcare-assistant.git"
-  },
+    title: "Microsoft Fabric ETL - Insurance Analytics",
+    description: "End-to-end analytics platform using Medallion Architecture with Microsoft Fabric and PySpark. Built for scalable enterprise data processing.",
+    image: "/images/fabric-insurance.png",
+    tags: ["Microsoft Fabric", "Lakehouse", "PySpark", "ETL Pipeline"],
+    githubUrl: "https://github.com/Daniel-jcVv/insurance-analytics-medallion.git"
+  }
 ];
 
 export const ProjectsSection = () => {
@@ -80,7 +69,7 @@ export const ProjectsSection = () => {
               <div className="p-6">
                 <div className="flex flex-wrap gap-2 mb-4">
                   {project.tags.map((tag) => (
-                    <span 
+                    <span
                       key={tag}
                       className="px-2 py-1 text-xs font-medium border rounded-full bg-secondary text-secondary-foreground"
                     >

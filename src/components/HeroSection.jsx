@@ -10,21 +10,19 @@ export const HeroSection = () => {
       <div className="container max-w-4xl mx-auto text-center z-10">
         <div className="space-y-6">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-            <span className="opacity-0 animate-fade-in"> Hi, I'm</span>
+            <span className="opacity-0 animate-fade-in"> Scale Your Business with </span>
             <span className="text-primary opacity-0 animate-fade-in-delay-1">
-              {" "}
-              Juan Daniel
+              AI Automation
             </span>
             <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2">
-              {" "}
-              Garcia Belman
+              & Data Pipelines
             </span>
           </h1>
 
-          <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            I bring data to life through code. My specialty is Data Engineering,
-            where I build the high-performance infrastructure that makes 
-            interactive and intelligent web applications possible
+          <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-delay-3">
+            Helping companies reduce operational debt through
+            intelligent n8n workflows, Python automation, and autonomous AI agents.
+            Robust engineering for a faster future.
           </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">
