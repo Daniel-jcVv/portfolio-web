@@ -41,3 +41,6 @@ logs
 # Editor directories and files
 files/
 
+# CV Builder files
+cv_builder/
+
