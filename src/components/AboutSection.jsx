@@ -30,17 +30,18 @@ export const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">
-              AI Automation & Data Engineer
+              Data Engineer & Automation
             </h3>
 
             <p className="text-muted-foreground">
-              With over 3 years of experience in data engineering, I specialize in building autonomous data ecosystems.
-              I bridge the gap between traditional DE and AI by orchestrating intelligent workflows with n8n and Python,
-              transforming manual operations into scalable, self-evolving solutions.
+              Data Engineer with 4+ years of experience across Fortune 500 clients (Telcel, Citi Banamex) and,
+              today, a multi-brand automotive dealer group. I build layered lakehouses (bronze/silver/gold),
+              ETL pipelines orchestrated with n8n and Airflow, and the reporting that runs on top of them.
             </p>
             <p className="text-muted-foreground">
-              I'm passionate about the "Agentic" era of data. Currently, I focus on designing AI agents that don't just process data,
-              but act upon it, reducing operational debt and unlocking new levels of efficiency through cutting-edge automation.
+              I care about pipelines that can be trusted and left running: idempotent loads, validation before
+              publishing, lineage and audit trails, and automated tests. I also use AI agents to speed up
+              development and automate repetitive operations.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -67,10 +68,10 @@ export const AboutSection = () => {
                   <Code className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg"> Data Engineer</h4>
+                  <h4 className="font-semibold text-lg">Data Pipelines & Lakehouse</h4>
                   <p className="text-muted-foreground">
-                    Building and optimizing ETL processes while implementing
-                    data quality frameworks and automated reporting solutions.
+                    Incremental ETL from SQL Server into PostgreSQL through
+                    bronze, silver and gold layers, with Python and SQL.
                   </p>
                 </div>
               </div>
@@ -81,10 +82,10 @@ export const AboutSection = () => {
                   <User className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">AI Automation & n8n</h4>
+                  <h4 className="font-semibold text-lg">Orchestration & Automation</h4>
                   <p className="text-muted-foreground">
-                    Developing automated workflows and data processing systems
-                    that streamline operations and reduce manual interventions.
+                    n8n workflows and an Airflow pilot that run monthly reporting,
+                    marketing spend and KPI pipelines without manual steps.
                   </p>
                 </div>
               </div>
@@ -96,10 +97,10 @@ export const AboutSection = () => {
                 </div>
 
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Agentic Workflows</h4>
+                  <h4 className="font-semibold text-lg">Data Quality & Governance</h4>
                   <p className="text-muted-foreground">
-                    Designing end-to-end data architectures and coordinating
-                    cross-functional teams to deliver scalable analytics solutions.
+                    Validation before load, run IDs and hashes for lineage,
+                    maker-checker approvals, and CI with pytest and Playwright.
                   </p>
                 </div>
               </div>

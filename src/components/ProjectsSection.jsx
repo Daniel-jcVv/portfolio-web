@@ -35,6 +35,24 @@ const projects = [
     image: "/images/fabric-insurance.png",
     tags: ["Microsoft Fabric", "Lakehouse", "PySpark", "ETL Pipeline"],
     githubUrl: "https://github.com/Daniel-jcVv/insurance-analytics-medallion.git"
+  },
+
+  {
+    id: 5,
+    title: "Inventory Autopilot - ETL with AI Dashboard",
+    description: "Automated inventory health pipeline: dead stock detection, overstock alerts and demand forecasting from raw ERP exports, with email alerts via n8n.",
+    image: "/images/inventory-autopilot.png",
+    tags: ["Python", "pandas", "SQL Server", "Streamlit", "n8n Automation"],
+    githubUrl: "https://github.com/Daniel-jcVv/inventory-autopilot"
+  },
+
+  {
+    id: 6,
+    title: "GPS Fleet Analytics",
+    description: "ETL pipeline and interactive dashboard for fleet fuel consumption and route analysis.",
+    image: "/images/gps-fleet-analytics.png",
+    tags: ["Python", "pandas", "SQLite", "Streamlit", "ETL Pipeline"],
+    githubUrl: "https://github.com/Daniel-jcVv/gps-fleet-analytics"
   }
 ];
 
