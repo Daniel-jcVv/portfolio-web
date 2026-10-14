@@ -5,6 +5,7 @@ const skills = [
   // AI & Automation
   { name: "n8n", category: "automation", level: "proficient", description: "Workflow orchestration, API integrations, autonomous agent loops" },
   { name: "Python", category: "automation", level: "proficient", description: "AI Agents (CrewAI, AutoGen), Automation scripts, LangChain" },
+  { name: "Claude Code", category: "automation", level: "proficient", description: "AI-assisted development: agents, skills, hooks and subagents for coding, testing and data pipelines" },
   { name: "AI Agents", category: "automation", level: "experienced", description: "Design and deployment of autonomous agents for business processes" },
   { name: "LangChain", category: "automation", level: "experienced", description: "RAG pipelines, LLM orchestration, and intelligent tool-use" },
 
