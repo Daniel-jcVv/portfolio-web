@@ -1,3 +1,4 @@
+import { ThemeToggle } from "./ThemeToggle";
 
 import {cn} from "@/lib/utils";
 import {Menu, X} from "lucide-react";
@@ -44,7 +45,8 @@ export const Navbar = () => {
                 </a>
 
             {/* desktop nav */}
-            <div className="hidden md:flex space-x-8">
+            <div className="flex items-center gap-2">
+            <div className="hidden md:flex space-x-8 mr-4">
                 {navItems.map((item, key) => (
             <a
                 key={key}
@@ -65,6 +67,8 @@ export const Navbar = () => {
         >
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}{" "}
         </button>
+        <ThemeToggle />
+        </div>
 
         <div
           className={cn(

@@ -1,48 +1,31 @@
 import { Moon, Sun } from "lucide-react";
-import { useEffect, useState } from "react";
-import { cn } from "@/lib/utils";
+import { useState } from "react";
 
-
+// Initial theme is set before paint by the inline script in index.html.
 export const ThemeToggle = () => {
-	const [isDarkMode, setIsDarkMode] = useState(true);
-
-	useEffect(() => {
-		const storedTheme = localStorage.getItem("theme");
-		if (storedTheme === "light") {
-			setIsDarkMode(false);
-			document.documentElement.classList.remove("dark");
-		} else {
-			setIsDarkMode(true);
-			document.documentElement.classList.add("dark");
-			if (!storedTheme) localStorage.setItem("theme", "dark");
-		}
-	}, []);
+	const [isDarkMode, setIsDarkMode] = useState(() =>
+		document.documentElement.classList.contains("dark")
+	);
 
 	const toggleTheme = () => {
-		if (isDarkMode) {
-			document.documentElement.classList.remove("dark");
-			localStorage.setItem("theme", "light");
-			setIsDarkMode(false);
-		} else {
-			document.documentElement.classList.add("dark");
-			localStorage.setItem("theme", "dark");
-			setIsDarkMode(true);
+		const next = !isDarkMode;
+		document.documentElement.classList.toggle("dark", next);
+		try {
+			localStorage.setItem("theme", next ? "dark" : "light");
+		} catch {
+			// Storage blocked: the choice lasts only for this visit.
 		}
+		setIsDarkMode(next);
 	};
 
 	return (
 		<button
 			onClick={toggleTheme}
-			className={cn(
-				"fixed max-sm:hidden top-5 right-5 z-50 p-2 rounded-full transition-colors duration-300",
-				"focus:outline-hidden"
-			)}
+			className="p-2 rounded-full text-foreground hover:text-primary transition-colors duration-300"
+			aria-label={isDarkMode ? "Switch to light mode" : "Switch to dark mode"}
+			title={isDarkMode ? "Light mode" : "Dark mode"}
 		>
-			{isDarkMode ? (
-				<Sun className="h-6 w-6 text-yellow-300" />
-			) : (
-				<Moon className="h-6 w-6 text-blue-900" />
-			)}
+			{isDarkMode ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
 		</button>
 	);
 };
