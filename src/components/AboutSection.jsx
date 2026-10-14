@@ -34,7 +34,7 @@ export const AboutSection = () => {
             </h3>
 
             <p className="text-muted-foreground">
-              With over 3 years of experience in data engineering, I specialize in building autonomous data ecosystems.
+              With over 4 years of experience in data engineering, I specialize in building autonomous data ecosystems.
               I bridge the gap between traditional DE and AI by orchestrating intelligent workflows with n8n and Python,
               transforming manual operations into scalable, self-evolving solutions.
             </p>
