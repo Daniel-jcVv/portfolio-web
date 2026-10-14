@@ -12,7 +12,6 @@ const skills = [
   // Data Engineering & Backend
   { name: "SQL & Architecture", category: "etl", level: "proficient", description: "Medallion Architecture (Bronze/Silver/Gold), Advanced T-SQL, and efficient schema design" },
   { name: "Databricks", category: "etl", level: "proficient", description: "Unified Lakehouse platform, Spark notebooks, and automated Delta Lake transformations" },
-  { name: "PySpark", category: "etl", level: "developing", description: "Distributed processing and high-volume data transformations" },
   { name: "PostgreSQL", category: "etl", level: "proficient", description: "Layered lakehouse serving, schema design and audit tables" },
   { name: "dbt", category: "etl", level: "developing", description: "SQL transformations, tests and documentation" },
   { name: "Google Apps Script", category: "automation", level: "experienced", description: "Capture forms and Sheets automation with end-to-end tests" },
